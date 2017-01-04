@@ -10,8 +10,8 @@ app.use(express.static(__dirname + '/dist'));
 
 //get route
 
-app.get('/', (req, res)=> {
-  res.sendFile(path.join(__dirname, '/dist/index.html'));
+app.get('/*', (req, res)=> {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 //listen app on port
