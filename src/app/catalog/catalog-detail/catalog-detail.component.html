@@ -18,7 +18,7 @@
 					alt="Robo-{{tshirt.name}}">
 		</div>
 		<div class="col-sm-6">
-			<p>
+			<p class="my-1">
 				Price: <strong>{{tshirt.price | currency}}</strong>
 			</p>
 			<ul class="list-group">
@@ -28,7 +28,7 @@
 				<li class="list-group-item">Code: {{tshirt.id}}</li>
 			</ul>
 			<br />
-			<div class="text-xs-center button-group">
+			<div class="text-xs-center button-group hidden-sm-down">
 				<button (click)="toBasket(tshirt)"
 								[disabled]="tshirt.inbasket"
 								class="btn btn-outline-primary btn-lg">
@@ -38,9 +38,18 @@
 					class="btn btn-outline-success btn-lg"
 					data-toggle="modal" data-target="#myModal">Buy in one click
 				</button>
-
 			</div>
-
+			<div class="text-xs-center button-group hidden-md-up">
+				<button (click)="toBasket(tshirt)"
+								[disabled]="tshirt.inbasket"
+								class="btn btn-outline-primary btn-sm">
+				+ basket
+				</button>
+				<button (click)="buyNow()"
+					class="btn btn-outline-success btn-sm"
+					data-toggle="modal" data-target="#myModal">Buy in one click
+				</button>
+			</div>
 
 		</div>
 

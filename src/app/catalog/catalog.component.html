@@ -6,7 +6,9 @@
   <a *ngIf="quantity" title="view basket" routerLink="/basket">Shopping-cart:</a>
   <span *ngIf="quantity" class="tag tag-pill d-inline tag-success">{{quantity}}</span>
   <span *ngIf="!quantity" class="tag tag-pill d-inline tag-success">0</span>
-  <span class="d-inline alert alert-success mx-1" *ngIf="name">{{name}}</span>
+  <span class="d-inline alert alert-success mx-1 hidden-sm-down" *ngIf="name">{{name}}</span>
+  <span class="d-block alert alert-success mx-1 my-1 hidden-md-up" *ngIf="name">{{name}}</span>
+
 </div>
 
 
