@@ -1,0 +1,13 @@
+<div class="my-1">
+  <h1 class="d-inline">
+    Catalog <small>section</small>
+  </h1>
+
+  <a *ngIf="quantity" title="view basket" routerLink="/basket">Shopping-cart:</a>
+  <span *ngIf="quantity" class="tag tag-pill d-inline tag-success">{{quantity}}</span>
+  <span *ngIf="!quantity" class="tag tag-pill d-inline tag-success">0</span>
+  <span class="d-inline alert alert-success mx-1" *ngIf="name">{{name}}</span>
+</div>
+
+
+<router-outlet></router-outlet>

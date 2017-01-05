@@ -1,0 +1,45 @@
+<h2>
+	<span>
+		<img *ngIf="tshirt"
+				class="img-fluid rounded"
+				[src]="tshirt.print"
+				[alt]="tshirt.name" /></span> Edit t-shirt <small *ngIf="tshirt">Robo-{{tshirt.name}}</small> properties
+</h2>
+
+<div class="jumbotron">
+
+	<div *ngIf="tshirt">
+		<div class="form-group">
+			<label class="form-control-label" for="">Model name:</label>
+			<input class="form-control" type="text" [(ngModel)]="editName"/>
+		</div>
+
+		<div class="form-group">
+			<label class="form-control-label" for="">Size:</label>
+			<input class="form-control" type="text" [(ngModel)]="editSize"/>
+		</div>
+
+		<div class="form-group">
+			<label class="form-control-label" for="">Color:</label>
+			<input class="form-control" type="text" [(ngModel)]="editColor"/>
+		</div>
+
+		<div class="form-group">
+			<label class="form-control-label" for="">Material:</label>
+			<input class="form-control" type="text" [(ngModel)]="editMaterial"/>
+		</div>
+
+		<div class="form-group">
+			<label class="form-control-label" for="">Price</label>
+			<input class="form-control" type="text" [(ngModel)]="editPrice"/>
+		</div>
+
+		<div class="form-group text-xs-center">
+			<button (click)="cancel()" class="btn btn-lg btn-outline-danger">Cancel</button>
+			<button (click)="save()" class="btn btn-lg btn-outline-success">Save</button>
+		</div>
+		<a [routerLink]="['/catalog', tshirt.id]">View in catalog</a>
+
+	</div>
+
+</div>

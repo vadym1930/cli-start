@@ -1,0 +1,49 @@
+<app-catalog-modal [chose]="chose"></app-catalog-modal>
+
+<div class="jumbotron">
+	<a href="javaScript: void(0)" (click)="goBack()">back</a>
+	<a class="float-xs-right added"
+						*ngIf="tshirt.inbasket"
+						routerLink="/basket">added to basket</a>
+	<h2 class="text-center">
+			<small>T-shirt model:</small>
+			Robo-{{tshirt.name}}
+			<small>Print:</small>
+	</h2>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<img class="img-fluid rounded mx-auto d-block"
+					[src]="tshirt.print"
+					alt="Robo-{{tshirt.name}}">
+		</div>
+		<div class="col-sm-6">
+			<p>
+				Price: <strong>{{tshirt.price | currency}}</strong>
+			</p>
+			<ul class="list-group">
+				<li class="list-group-item">Size: {{tshirt.size}}</li>
+				<li class="list-group-item">Material: {{tshirt.material}}</li>
+				<li class="list-group-item">Color: {{tshirt.color}}</li>
+				<li class="list-group-item">Code: {{tshirt.id}}</li>
+			</ul>
+			<br />
+			<div class="text-xs-center button-group">
+				<button (click)="toBasket(tshirt)"
+								[disabled]="tshirt.inbasket"
+								class="btn btn-outline-primary btn-lg">
+				+ basket
+				</button>
+				<button (click)="buyNow()"
+					class="btn btn-outline-success btn-lg"
+					data-toggle="modal" data-target="#myModal">Buy in one click
+				</button>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>

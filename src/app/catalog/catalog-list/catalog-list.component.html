@@ -1,0 +1,42 @@
+<app-catalog-modal [chose]="chose"></app-catalog-modal>
+
+
+<div class="card-columns">
+	<div class="card" *ngFor="let tshirt of tshirts">
+		<div class="card-block">
+			<a class="card-link added"
+					*ngIf="tshirt.inbasket"
+					title="Veiw basket"
+					routerLink="/basket">added to basket</a>
+			<a class="card-link float-xs-right"
+					[routerLink]="['/catalog', tshirt.id]">details</a>
+		</div>
+    <a [routerLink]="['/catalog', tshirt.id]">
+			<img class="card-img-top img-fluid mx-auto d-block"
+    			[src]="tshirt.print"
+    			[alt]="tshirt.name">    	
+    </a>
+    <div class="card-block">
+      <h4 class="card-title"><small>Model: robo-</small>{{tshirt.name}}</h4>
+      <p class="card-text"><strong>Price:</strong> {{tshirt.price | currency}}</p>
+      <p class="card-text">Size: {{tshirt.size}}</p>
+		
+			</div>
+			<div class="card-block text-xs-center">
+				<button (click)="toBasket(tshirt)"
+								[disabled]="tshirt.inbasket"
+								class="btn btn-outline-primary btn-sm">+ basket
+				</button>
+				<button (click)="buyNow(tshirt)"
+								class="btn btn-outline-success btn-sm"
+								data-toggle="modal"
+								data-target="#myModal">Buy in one click</button>
+			</div>
+  </div>
+</div>
+
+
+
+
+
+

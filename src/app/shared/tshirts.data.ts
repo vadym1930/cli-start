@@ -1,0 +1,184 @@
+import { Tshirt } from './tshirt.model';
+
+export const tshirts: Tshirt[] = 
+[{
+  "id": 1001,
+  "size": "2XL",
+  "color": "white",
+  "print": "./app/img/autvelin.jpg",
+  "price": 6.53,
+  "name": "Stephen",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1002,
+  "size": "L",
+  "color": "black",
+  "print": "./app/img/voluptasnostrumenim.jpg",
+  "price": 2.88,
+  "name": "Chris",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1003,
+  "size": "L",
+  "color": "black",
+  "print": "./app/img/temporeenimvel.jpg",
+  "price": 9.25,
+  "name": "Wayne",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1004,
+  "size": "XL",
+  "color": "black",
+  "print": "./app/img/rerumtemporibussunt.jpg",
+  "price": 5.77,
+  "name": "James",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1005,
+  "size": "L",
+  "color": "black",
+  "print": "./app/img/quambeataenulla.jpg",
+  "price": 1.31,
+  "name": "Douglas",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1006,
+  "size": "XL",
+  "color": "white",
+  "print": "./app/img/nihilquidemest.jpg",
+  "price": 5.83,
+  "name": "Gerald",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1007,
+  "size": "S",
+  "color": "white",
+  "print": "./app/img/nihileaquein.jpg",
+  "price": 5.06,
+  "name": "Raymond",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1008,
+  "size": "M",
+  "color": "black",
+  "print": "./app/img/mollitiadebitisrepellendus.jpg",
+  "price": 0.75,
+  "name": "Jason",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 1009,
+  "size": "S",
+  "color": "white",
+  "print": "./app/img/iuresedlabore.jpg",
+  "price": 9.28,
+  "name": "Clarence",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10010,
+  "size": "XS",
+  "color": "white",
+  "print": "./app/img/ipsumcorruptiiusto.jpg",
+  "price": 6.91,
+  "name": "Henry",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10011,
+  "size": "2XL",
+  "color": "white",
+  "print": "./app/img/exercitationemofficiasunt.jpg",
+  "price": 3.79,
+  "name": "Carl",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10012,
+  "size": "M",
+  "color": "black",
+  "print": "./app/img/evenietconsequuntursunt.jpg",
+  "price": 4.89,
+  "name": "Ralph",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10013,
+  "size": "3XL",
+  "color": "black",
+  "print": "./app/img/etrationedistinctio.jpg",
+  "price": 5.67,
+  "name": "Craig",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10014,
+  "size": "XL",
+  "color": "white",
+  "print": "./app/img/etquamnecessitatibus.jpg",
+  "price": 9.22,
+  "name": "Louis",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10015,
+  "size": "S",
+  "color": "black",
+  "print": "./app/img/etmaximealiquam.jpg",
+  "price": 0.08,
+  "name": "Wayne",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10016,
+  "size": "L",
+  "color": "white",
+  "print": "./app/img/doloremquidemut.jpg",
+  "price": 3.98,
+  "name": "Billy",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10017,
+  "size": "M",
+  "color": "white",
+  "print": "./app/img/debitisomnisrerum.jpg",
+  "price": 1.12,
+  "name": "Michael",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10018,
+  "size": "XS",
+  "color": "white",
+  "print": "./app/img/cumquamratione.jpg",
+  "price": 2.71,
+  "name": "Benjamin",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10019,
+  "size": "M",
+  "color": "black",
+  "print": "./app/img/culpasaepequi.jpg",
+  "price": 3.17,
+  "name": "Craig",
+  "material": "cotton",
+  "inbasket": false
+}, {
+  "id": 10020,
+  "size": "2XL",
+  "color": "black",
+  "print": "./app/img/commodiexcepturidolores.jpg",
+  "price": 4.85,
+  "name": "Antonio",
+  "material": "cotton",
+  "inbasket": false
+}]
